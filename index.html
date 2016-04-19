@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<title>Магазин готовых макетов Nërd's</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,500&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container clearfix">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/main-logo.png" alt="Логотип коипании Nërd's" width="139" height="56">
+				</a>
+			</div>
+			<nav class="main-menu">
+				<ul >
+					<li class="active"><a href="#"> Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="catalog.html">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="cart"><a href="#">Корзина</a></div>
+			<section class="slider">
+				<input type="radio" id="expensive" name="slide">
+				<input type="radio" id="math" name="slide">
+				<input type="radio" id="drugs" name="slide">
+				<div class="slider-slides">
+					<div class="slides-item expensive">
+						<h2 class="slides-title">
+							Долго, дорого, скрупулезно.
+						</h2>
+						<p>
+							Математически выверенный дизайн для вашего сайта или мобильного приложения.
+						</p>
+						<a class="btn btn-red">Узнать больше</a>
+					</div>
+					<div class="slides-item math">
+						<h2 class="slides-title">
+							Любите ли вы математику, как любим ее мы?
+						</h2>
+						<p>
+							Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать
+						</p>
+						<a class="btn btn-red">Узнать больше</a>
+					</div>
+					<div class="slides-item drugs">
+						<h2 class="slides-title">Только наркотики, только хардкор!</h2>
+						<p>
+							Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
+						</p>
+						<a class="btn">Узнать больше</a>
+					</div>
+				</div>
+				<div class="slider-controls">
+					<label for="expensive"></label>
+					<label for="math"></label>
+					<label for="drugs"></label>
+				</div>	
+			</section>
+		</div>
+	</header>
+	<main class="container clearfix" >
+		<section class="offers">
+			<div class="offer">
+				<div class="offer-image " ><img src="img/web-site.jpg" alt="Сайт на экране компьютера" width="240" height="124"></div>
+				<h2 class="offer-title">Веб-сайты</h2>
+				<p>
+					Мир никогда не будет прежним после того как увидит ваш сайт!
+				</p>
+				<a href="#" class="btn btn-red">Заказать</a>
+			</div>
+			<div class="offer">
+				<div class="offer-image"><img src="img/mobile-applications.jpg" alt="Мобильные приложения на экранах мобильных телефонов" width="240" height="124"></div>
+				<h2 class="offer-title">Приложения</h2>
+				<p>
+					Покорите топ-10 приложений в AppStore и Google Play
+				</p>
+				<a href="#" class="btn btn-green">Заказать</a>
+			</div>
+			<div class="offer">
+				<div class="offer-image"><img src="img/presentation.jpg" alt="Презентация на экране для проектора" width="240" height="124"></div>
+				<h2 class="offer-title">Презентации</h2>
+				<p>
+					Вы даже не представляете, насколько вы изумительны!
+				</p>
+				<a href="#" class="btn btn-yellow">Заказать</a>
+			</div>
+		</section>
+		<section class="description">
+			<div class="description-content">
+				<h1 class="main-title">
+					Мы - маленькая, но гордая дизайн-студия из Краснодара.
+				</h1>
+				<p>
+					Исповедуем принцип минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
+				</p>
+			</div>
+			<div class="description-logo"> 
+				<img src="img/logo-date.png" alt="Логотип комании Nërd's, основанной в 2004 году" width="240" height="119"> 	
+			</div>
+		</section>
+		<section class="types-and-style-of-work">
+			<div class="types-of-work">
+				<h3 class="description-title">
+					Выполняем заказы на разработку:
+				</h3>
+				<ul>
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для iOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</div>
+			<div class="style-of-work">
+				<h3 class="description-title">Как мы работаем:</h3>
+				<ul>
+					<li>С самоотдачей 146%</li>
+					<li>Соблюдая сроки на 100%</li>
+					<li>По предоплате 50%</li>
+				</ul>
+			</div>
+		</section>	
+		<section class="portfolio">
+			<a href="#">
+				<img src="img/glukhanko.png" alt="Логотип дизайн студиии Glukhanko " width="198" height="37">
+			</a>
+			<a href="#">
+				<img src="img/html-academy.png" alt="Логотип HTML Academy" width="199" height="68">
+			</a>
+			<a href="#">
+				<img src="img/borodinski.png" alt="Логотип Барбершоп «Бородинский»" width="209" height="116">
+			</a>
+		</section>
+		<div class="write-us">
+			<form action="url">
+				<label for="username"></label>
+				<input type="text" name="username" id="username" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+				<label for="user-email"></label>
+				<input type="text" name="user-email" id="user-email" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+				<label for="user-text"></label>
+				<textarea name="user-text" id="user-text" cols="30" rows="4"> В СВОБОДНОЙ ФОРМЕ</textarea>
+				<button type="submit">ОТПРАВИТЬ</button>
+				<button class="close-popup">Закрыть</button>
+			</form>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<section class="map">
+			<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=UmjS8qSRzZPSiwXxkhIDgM9c8GmjVfdB&width=100%&height=400&lang=ru_RU&sourceType=constructor"></script>
+			<div class="contacts">
+				<h3 class="contacts-title">
+					Nërds	design studio
+				 </h3>
+				<p>
+					350000,Краснодар, ул.Головатого,100
+				</p>
+				<p>тел.+7(861)275-75-75</p>
+				<a class="btn btn-red" href="mailto:">Напишите нам</a>
+			</div>
+		</section>	
+		<div class="container clearfix">
+			<div class="social-contacts">
+				<a href="#" class="social-btn vk">Вконтакте</a>
+				<a href="#" class="social-btn fb">Фейсбук</a>
+				<a href="#" class="social-btn inst">Инстаграмм</a>
+			</div>
+			<p>
+				<strong>Давайте дружить, это выгодно!</strong>
+				Скидка 10% для друзей из социальных сетей.
+			</p>
+		</div>
+	</footer>
+</body>
 </html>
