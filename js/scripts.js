@@ -2,6 +2,10 @@ var link = document.querySelector(".contacts-btn")
 var popup = document.querySelector(".write-us");
 var close = popup.querySelector(".close-popup");
 var overlay = document.querySelector(".overlay");
+var form = popup.querySelector("form");
+var userName = form.querySelector("[name=username]");
+var userEmail = form.querySelector("[name=user-email]");
+var userMessage = form.querySelector("[name=user-text]");
 
 link.addEventListener("click",function(event){
   event.preventDefault();
@@ -19,6 +23,15 @@ overlay.addEventListener("click",function(event){
   event.preventDefault();
   popup.classList.remove("pop-up-show");
   overlay.classList.remove("pop-up-show");
+});
+
+form.addEventListener("submit",function(event){
+  if (!userName.value||!userEmail.value||!userMessage.value){
+    event.preventDefault();
+    popup.classList.remove("swing");
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add("swing");
+  }
 });
 
     ymaps.ready(function () {
@@ -46,4 +59,3 @@ overlay.addEventListener("click",function(event){
 
     myMap.geoObjects.add(myPlacemark);
 });
-

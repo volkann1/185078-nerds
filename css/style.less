@@ -2,6 +2,73 @@
 @grey:#283136;
 @blue:#f1f1f1;
 
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
 .border(){
   border-bottom: 2px solid #eeeeee;
 }
@@ -191,6 +258,7 @@ body {
   -webkit-transition: 1s;
   transition: 1s;
   border: none;
+  outline: none;
 }
 
 .btn-red {
@@ -642,6 +710,7 @@ body {
 .write-us textarea:focus,
 .write-us input[type="text"]:focus {
   border: 2px solid #56bffb;
+  outline: none;
 }
 
 .write-us .close-popup {
@@ -1018,7 +1087,7 @@ body {
   position: relative;
   width: 240px;
   height: 240px;
-  border-top: 30px solid transparent;
+  border-top: 30px solid @blue;
   border-radius: 3px 3px 0 0;
   margin-right: 80px;
   margin-bottom: 80px;
@@ -1126,15 +1195,10 @@ body {
               34px 0 0 #fff;
   top: -20px;
   left: 13px;
-  display: none;
 }
 
 .item:nth-child(odd) {
   margin-right: 0;
-}
-
-.item:hover::before {
-  display: block;
 }
 
 .site-with-long-title .site-description{
@@ -1188,4 +1252,12 @@ margin-top: 3px;
 
 .catalog-nav {
   margin-bottom: -5px;
+}
+
+.swing
+{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
